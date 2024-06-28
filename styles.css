@@ -1,0 +1,274 @@
+/* CSS styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+.sign-in-btn {
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+/* Hero */
+.hero {
+    background-image: url('background.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.email-form input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.get-started-btn {
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+/* TV Section, Watch Section, Container */
+.tv-section,
+.watch-section,
+.container,
+.kids-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    border-top: 8px solid #222;
+}
+
+.section-text,
+.container-text {
+    text-align: center;
+    padding: 20px;
+}
+
+.section-text h1,
+.container-text h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.section-text p,
+.container-text p {
+    font-size: 1rem;
+}
+
+.section-image,
+.container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.section-image img,
+.container-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* FAQ Section */
+.faq-section {
+    background: #000;
+    padding: 50px 20px;
+    border-top: 8px solid #222;
+    text-align: center;
+}
+
+.faq-section h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    background: #333;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.faq-question {
+    background: #333;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    text-align: left;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background: #444;
+}
+
+.plus {
+    font-size: 1.5rem;
+}
+
+.faq-answer {
+    background: #444;
+    display: none;
+    padding: 20px;
+    text-align: left;
+    border-top: 1px solid #222;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+/* Footer Section */
+.footer {
+    background: #000;
+    color: #757575;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer p {
+    margin: 0 0 20px;
+    font-size: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #757575;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 0.875rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-lang {
+    margin-bottom: 20px;
+}
+
+.footer-lang select {
+    background: #000;
+    color: #757575;
+    border: 1px solid #757575;
+    padding: 10px;
+    font-size: 0.875rem;
+}
+
+.footer-lang select option {
+    background: #000;
+    color: #fff;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .email-form {
+        flex-direction: row;
+    }
+
+    .email-form input {
+        margin-bottom: 0;
+        border-radius: 4px 0 0 4px;
+    }
+
+    .get-started-btn {
+        border-radius: 0 4px 4px 0;
+    }
+
+    .tv-section,
+    .watch-section,
+    .container,
+    .kids-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .section-text,
+    .container-text {
+        text-align: left;
+        padding: 20px;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer-links a {
+        margin-right: 30px;
+    }
+}
